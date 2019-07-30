@@ -1,11 +1,13 @@
 class Dog
 
+    attr_accessor :name
+
     @@all = []
 
 
     def initialize(name)
         @name = name
-        @@all << self #instance method
+        @@all << self #object which is an instance of dog class
     end
 
 
@@ -15,7 +17,11 @@ class Dog
 
     def self.clear_all
 #        @@all = [] one way works
-        @@all.clear
+        @@all.clear #another way works
+    end
+
+    def self.print_all
+        puts @@all
 
     end
 
