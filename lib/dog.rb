@@ -4,8 +4,6 @@ class Dog
 #        dog << self
     end
 
-    def self.all
-
 
     @@all = []
 
