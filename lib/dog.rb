@@ -7,7 +7,8 @@ class Dog
 
     def initialize(name)
         @name = name
-        @@all << self #object which is an instance of dog class
+#        @@all << self #object which is an instance of dog class
+        self.save
     end
 
 
@@ -24,7 +25,11 @@ class Dog
         @@all.each do |dog|
             puts dog.name
         end
+    end
 
+
+    def save
+        @@all << self
     end
 
 
